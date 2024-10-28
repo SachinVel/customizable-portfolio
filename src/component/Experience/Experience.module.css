@@ -1,0 +1,52 @@
+.VerticalTimelineElement{
+    width: 100%;
+    /* text-align: center; */
+}
+
+.ExperienceContainer{
+    padding: 50px 0px;
+}
+
+.sectionHeading {
+    font-family: 'Paprika';
+    text-align: center;
+}
+
+.VerticalTimeline{
+    transform: translateX(-25%);
+}
+
+.ExperienceHeader{
+    transform: translate(10%,-25%);
+    color: #000;
+    width: 300px !important
+}
+
+.ExperienceInfo{
+    width: 350px;
+    height: 80px;
+    text-align: center;
+}
+
+.ExperienceTitle{
+    font-size: 22px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.TechnologyUsedText{
+    font-size: 20px;
+}
+
+.TechnologyUsedSection{
+    text-align: center;
+}
+
+@media (max-width: 1170px){
+    .ExperienceHeader{
+        display: none !important;
+    }
+
+}
+
+

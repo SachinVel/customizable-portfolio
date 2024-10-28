@@ -1,0 +1,62 @@
+.headerContainer {
+  width: 80%;
+  /* box-shadow: 5px 5px 8px #888; */
+  /* border: 2px solid black; */
+  top: 0px;
+  padding: 10px 20px;
+  margin: 20px 10%;
+  position: fixed;
+  border-radius: 10px;
+  background-color: #f3cd01;
+  z-index: 100;
+  color: #222;
+}
+
+.headerTitle {
+  /* font-size: 30px; */
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.navList li{
+  margin: 0px 8px;
+}
+
+.navList li a {
+  color: #222; /* Explicitly set color to white */
+  text-decoration: none; /* Remove the default underline */
+  position: relative;
+  font-weight: normal;
+  font-size: 18px;
+  transition: font-weight 0.3s ease; /* Smooth font-weight change */
+}
+
+.navList li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjusts distance from text */
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.navList li a:hover {
+  font-weight: bold;
+}
+
+.navList li a:hover::after {
+  width: 100%; /* Expands the underline to full width */
+}

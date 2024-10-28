@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-quicksand), sans-serif;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.animation-screen {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans'),
+    url('/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Paprika';
+  src: local('Paprika'),
+    url('/fonts/Paprika/Paprika-Regular.ttf') format('truetype');
+}
