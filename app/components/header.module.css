@@ -1,15 +1,15 @@
 .headerContainer {
-  width: 80%;
+  /* width: 80%; */
   /* box-shadow: 5px 5px 8px #888; */
   /* border: 2px solid black; */
-  top: 0px;
-  padding: 10px 20px;
-  margin: 20px 10%;
+  /* top: 0px; */
+  /* padding: 10px 20px; */
+  /* margin: 10px 10%; */
   position: fixed;
   border-radius: 10px;
-  background-color: #f3cd01;
-  z-index: 100;
-  color: #222;
+  /* background-color: #f3cd01; */
+  /* z-index: 100; */
+  /* color: #222; */
 }
 
 .headerTitle {
@@ -22,7 +22,7 @@
 }
 
 .navList {
-  display: flex;
+  /* display: flex; */
   gap: 1rem;
   list-style: none;
   padding: 0px;
@@ -33,7 +33,7 @@
   margin: 0px 8px;
 }
 
-.navList li a {
+.navList li {
   color: #222; /* Explicitly set color to white */
   text-decoration: none; /* Remove the default underline */
   position: relative;
@@ -42,7 +42,7 @@
   transition: font-weight 0.3s ease; /* Smooth font-weight change */
 }
 
-.navList li a::after {
+.navList li::after {
   content: '';
   position: absolute;
   left: 0;
@@ -53,10 +53,10 @@
   transition: width 0.3s ease; /* Smooth underline animation */
 }
 
-.navList li a:hover {
+.navList li:hover {
   font-weight: bold;
 }
 
-.navList li a:hover::after {
+.navList li:hover::after {
   width: 100%; /* Expands the underline to full width */
 }

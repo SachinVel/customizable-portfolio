@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import './globals.css';
 import { Box } from '@mui/material';
+import Home from './home';
 
 
 
@@ -15,7 +16,7 @@ function HomePage() {
     <Box >
       {/* <Header homeRef={homeRef} /> */}
       <Box className=" trigger-start" id="home-section">
-        {/* <Home /> */}
+        <Home />
       </Box>
     </Box>
   );

@@ -85,6 +85,8 @@ export default function RootLayout({ children }) {
           />
         </Box>
         <Header />
+        <div className="h-[15vh]">
+        </div>
         {children}
       </body>
     </html>

@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* global.css */
+:root {
+  --color-home-bg: #f3cd01;
+}
+
+.dark-theme {
+  --color-home-bg: #f3cd01;
+}
+
+/* .custom-theme {
+  --color-primary: #FFA500;
+  --color-background: #F0F0F0;
+} */
+
 html {
   width: 100%;
   height: 100%;
