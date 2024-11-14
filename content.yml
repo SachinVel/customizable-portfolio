@@ -1,17 +1,21 @@
 home:
-  - tilename: "Education"
-    icon: "faGraduationCap"  # FontAwesome icon name
-    text: "XYZ University,  Computer Science."
+  title: "My Summary"
+  tiles:
   - tilename: "Experience"
     icon: "faBriefcase"  # FontAwesome icon name
     text: "2+ years in software development."
   - tilename: "Primary skills"
     icon: "faCode"  # FontAwesome icon name
     text: "Built several full-stack applications including e-commerce platforms."
-  # - tilename: "Skills"
-  #   icon: "faTools"
-  #   text: "Proficient in JavaScript, React, Node.js, and CSS."
-
+  - tilename: "Education"
+    icon: "faBook"  # FontAwesome icon name
+    text: "XYZ University,  Computer Science."
+  - tilename: "Educations"
+    icon: "faBook"  # FontAwesome icon name
+    text: "XYZ University,  Computer Science."
+  - tilename: "Education2"
+    icon: "faBook"  # FontAwesome icon name
+    text: "XYZ University,  Computer Science."
 
 about:
   title: "About Me"

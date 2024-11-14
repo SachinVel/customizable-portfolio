@@ -27,7 +27,7 @@ function Header() {
 
 
     return (
-        <header className='relative'>
+        <header className='relative z-50'>
             <FontAwesomeIcon
                 icon={faBars}
                 onClick={toggleMenu}

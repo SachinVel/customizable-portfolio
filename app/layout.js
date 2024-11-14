@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
           />
         </Box>
         <Header />
-        <div className="h-[15vh]">
+        <div className="h-[150px]">
         </div>
         {children}
       </body>
