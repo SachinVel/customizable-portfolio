@@ -22,6 +22,14 @@ function Header() {
         setIsMenuOpen((prevState) => !prevState);
     }
 
+    const handleScroll = (event, id) => {
+        event.preventDefault();
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     useEffect(() => {
     }, []);
 
@@ -60,10 +68,11 @@ function Header() {
 
                 <nav className="flex flex-col items-center space-y-4 mt-4">
                     <ul className={`space-y-4 text-center ${styles.navList}`}>
-                        <li><Link href="/about" className="text-lg font-medium">About</Link></li>
-                        <li><Link href="/experience" className="text-lg font-medium">Experience</Link></li>
-                        <li><Link href="/projects" className="text-lg font-medium">Projects</Link></li>
-                        <li><Link href="/contact" className="text-lg font-medium">Contact</Link></li>
+                        <li><Link href="#home" onClick={(e) => handleScroll(e, 'home')} className="text-lg font-medium">Home</Link></li>
+                        <li><Link href="#about" onClick={(e) => handleScroll(e, 'about')} className="text-lg font-medium">About</Link></li>
+                        <li><Link href="#experience" onClick={(e) => handleScroll(e, 'experience')} className="text-lg font-medium">Experience</Link></li>
+                        <li><Link href="#projects" onClick={(e) => handleScroll(e, 'projects')} className="text-lg font-medium">Projects</Link></li>
+                        <li><Link href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="text-lg font-medium">Contact</Link></li>
                     </ul>
                 </nav>
             </div>
@@ -82,10 +91,11 @@ function Header() {
                     </Stack>
 
                     <ul className={` flex items-center text-center ${styles.navList}`}>
-                        <li><Link href="/about" className="text-lg font-medium">About</Link></li>
-                        <li><Link href="/experience" className="text-lg font-medium">Experience</Link></li>
-                        <li><Link href="/projects" className="text-lg font-medium">Projects</Link></li>
-                        <li><Link href="/contact" className="text-lg font-medium">Contact</Link></li>
+                        <li><Link href="#home" onClick={(e) => handleScroll(e, 'home')} className="text-lg font-medium">Home</Link></li>
+                        <li><Link href="#about" onClick={(e) => handleScroll(e, 'about')} className="text-lg font-medium">About</Link></li>
+                        <li><Link href="#experience" onClick={(e) => handleScroll(e, 'experience')} className="text-lg font-medium">Experience</Link></li>
+                        <li><Link href="#projects" onClick={(e) => handleScroll(e, 'projects')} className="text-lg font-medium">Projects</Link></li>
+                        <li><Link href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="text-lg font-medium">Contact</Link></li>
                     </ul>
                 </Stack>
             </div>

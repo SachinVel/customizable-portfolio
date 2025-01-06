@@ -19,10 +19,53 @@ home:
 
 about:
   title: "About Me"
-  description: "I'm a passionate frontend developer with a strong focus on React and JavaScript."
+  description: "I'm a passionate frontend developer with a. hello .strong focus on React and JavaScript. I'm a passionate frontend developer with a strong focus on React and JavaScript. I'm a passionate frontend developer with a strong focus on React and JavaScript. I'm a passionate frontend developer with a strong focus on React and JavaScript. I'm a passionate frontend developer with a strong focus on React and JavaScript. I'm a passionate frontend developer with a strong focus on React and JavaScript. I'm a passionate frontend developer with a strong focus on React and JavaScript. I'm a passionate frontend developer with a strong focus on React and JavaScript. "
+  imagePath: "/images/profile-photo.jpg"
 
-projects:
-  
+skills:
+  title: "Skills"
+  speed : 1000
+  skillList : 
+  - name: JavaScript
+    image: "/images/javascript.png"
+    tags:
+      - Frontend
+  - name: React
+    image: "/images/react.png"
+    tags:
+      - Frontend
+  - name: Node.js
+    image: "/images/nodejs.svg"
+    tags:
+      - Backend
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
 
 contact:
   email: "sachin@example.com"

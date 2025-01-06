@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
             id="tsparticles"
             init={particlesInit}
             options={{
-              fullScreen: { enable: false },
+              fullScreen: { enable: true },
               background: {
                 color: {
                   value: "#171E28",
@@ -77,7 +77,6 @@ export default function RootLayout({ children }) {
                 },
                 size: {
                   value: { min: 1, max: 3 },
-
                 },
               },
               detectRetina: true,
@@ -85,8 +84,6 @@ export default function RootLayout({ children }) {
           />
         </Box>
         <Header />
-        <div className="h-[150px]">
-        </div>
         {children}
       </body>
     </html>
