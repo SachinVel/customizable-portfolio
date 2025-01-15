@@ -97,14 +97,15 @@ export default function Skills({ content }) {
 
                 </div>
             </div>
-
+            <br></br>
+            <br></br>
             {
                 (skillList.length > 0) &&
                 <div className="w-full">
-                    <Marquee >
+                    <Marquee autoFill={true}>
                         <div className="flex justify-between w-full">
                             {skillList.map((skill, index) => (
-                                <div key={index} className="flex flex-col items-center mx-4">
+                                <div key={index} className="flex flex-col items-center mx-20">
                                     <Image
                                         src={skill.image}
                                         alt={skill.name}

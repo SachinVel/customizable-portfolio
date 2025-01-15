@@ -9,7 +9,7 @@ const About = ({ content }) => {
 
 
     <ContainerScroll
-      className="bg-gradient-to-r from-blue-500 to-blue-700"
+      className="bg-gradient-to-r from-blue-500 to-blue-700 my-0"
       titleComponent={
         <div className="text-center z-10 relative text-3xl text-white font-bold my-2">
           {content.title}
@@ -21,10 +21,7 @@ const About = ({ content }) => {
 
         {/* Tilted Background */}
         <div className="absolute inset-0 transform "></div>
-
-
-
-
+        
         {/* Content */}
         <div className="max-w-4xl mx-auto  flex flex-col md:flex-row items-center gap-8">
           {/* Image Section */}

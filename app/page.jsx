@@ -8,8 +8,10 @@ import { Box } from '@mui/material';
 import Home from './home';
 import dynamic from 'next/dynamic';
 import Skills from './skills';
+import About from './about';
+import Experience from './experience';
 
-const About = dynamic(() => import('./about'), { ssr: false });
+// const About = dynamic(() => import('./about'), { ssr: false });
 
 function HomePage() {
 
@@ -43,6 +45,9 @@ function HomePage() {
         </section>
         <section id="skills" className='relative'>
           <Skills content={content.skills} />
+        </section>
+        <section id="experience" className='relative'>
+          <Experience content={content.experience} />
         </section>
       </Box>
     </Box>

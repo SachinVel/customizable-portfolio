@@ -67,6 +67,36 @@ skills:
     tags:
       - Backend
 
+experience:
+  title : "Experience"
+  experienceList:
+  - position: "Software Developer"
+    startDate: "2021-01-01"
+    endDate: "Present"
+    company: "Tech Solutions Inc."
+    technologies: 
+      - JavaScript
+      - React
+      - Node.js
+    description:
+      - Developed and maintained web applications using React and Node.js.
+      - Collaborated with cross-functional teams to define and design new features.
+      - Implemented responsive design to ensure compatibility across various devices.
+    location: "San Francisco, CA"
+
+  - position: "Junior Developer"
+    startDate: "2019-06-01"
+    endDate: "2020-12-31"
+    company: "Web Innovators LLC"
+    technologies: 
+      - HTML
+      - CSS
+      - JavaScript
+    description:
+      - Assisted in the development of client-side web applications.
+      - Participated in code reviews and team meetings.
+      - Provided support in debugging and troubleshooting issues.
+    location: "New York, NY"
 contact:
   email: "sachin@example.com"
   phone: "123-456-7890"
