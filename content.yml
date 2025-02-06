@@ -97,6 +97,78 @@ experience:
       - Participated in code reviews and team meetings.
       - Provided support in debugging and troubleshooting issues.
     location: "New York, NY"
+
+  - position: "Junior Developer"
+    startDate: "2019-06-01"
+    endDate: "2020-12-31"
+    company: "Web Innovators LLC"
+    technologies: 
+      - HTML
+      - CSS
+      - JavaScript
+    description:
+      - Assisted in the development of client-side web applications.
+      - Participated in code reviews and team meetings.
+      - Provided support in debugging and troubleshooting issues.
+    location: "New York, NY"
+
+  - position: "Junior Developer"
+    startDate: "2019-06-01"
+    endDate: "2020-12-31"
+    company: "Web Innovators LLC"
+    technologies: 
+      - HTML
+      - CSS
+      - JavaScript
+    description:
+      - Assisted in the development of client-side web applications.
+      - Participated in code reviews and team meetings.
+      - Provided support in debugging and troubleshooting issues.
+    location: "New York, NY"
+
+projects:
+  title: "Projects"
+  projectList:
+  - title: "E-commerce Platform"
+    description: "Developed an e-commerce platform using React and Node.js."
+    technologies:
+      - React
+      - Node.js
+      - MongoDB
+    imagePath: "/images/project1.jpg"
+    githubLink: "https://github.com/smarsGroup/geo-epic"
+    liveLink: "https://geo-epic.herokuapp.com/"
+
+  - title: "E-commerce Platform"
+    description: "Developed an e-commerce platform using React and Node.js."
+    technologies:
+      - React
+      - Node.js
+      - MongoDB
+    imagePath: "/images/project1.jpg"
+    githubLink: "https://github.com/smarsGroup/geo-epic"
+    liveLink: "https://geo-epic.herokuapp.com/"
+
+  - title: "E-commerce Platform"
+    description: "Developed an e-commerce platform using React and Node.js."
+    technologies:
+      - React
+      - Node.js
+      - MongoDB
+    imagePath: "/images/project1.jpg"
+    githubLink: "https://github.com/smarsGroup/geo-epic"
+    liveLink: "https://geo-epic.herokuapp.com/"
+  
+  - title: "E-commerce Platform"
+    description: "Developed an e-commerce platform using React and Node.js."
+    technologies:
+      - React
+      - Node.js
+      - MongoDB
+    imagePath: "/images/project1.jpg"
+    githubLink: "https://github.com/smarsGroup/geo-epic"
+    liveLink: "https://geo-epic.herokuapp.com/"
+    
 contact:
   email: "sachin@example.com"
   phone: "123-456-7890"
