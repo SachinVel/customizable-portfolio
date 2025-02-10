@@ -83,7 +83,6 @@ export default function RootLayout({ children }) {
             }}
           />
         </Box>
-        <Header />
         {children}
       </body>
     </html>
