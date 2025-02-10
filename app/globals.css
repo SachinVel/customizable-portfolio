@@ -84,3 +84,7 @@ code {
 .fade-in {
   animation: fadeIn 1s ease-in-out forwards;
 }
+
+.p-accordion-toggle-icon{
+  display: none;
+}
