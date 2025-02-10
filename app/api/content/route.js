@@ -2,13 +2,30 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
+import { watch } from 'fs';
 
-export async function GET() {
+let cachedContent = null;
+
+function loadContent() {
   const filePath = path.join(process.cwd(), 'content.yml');
   const fileContents = fs.readFileSync(filePath, 'utf8');
-  const content = yaml.load(fileContents);
+  return yaml.load(fileContents);
+}
 
-  return new Response(JSON.stringify(content), {
+function setupWatcher() {
+  const filePath = path.join(process.cwd(), 'content.yml');
+  watch(filePath, (eventType) => {
+    if (eventType === 'change') {
+      cachedContent = loadContent();
+    }
+  });
+}
+
+setupWatcher();
+cachedContent = loadContent();
+
+export async function GET() {
+  return new Response(JSON.stringify(cachedContent), {
     headers: { 'Content-Type': 'application/json' },
   });
 }
