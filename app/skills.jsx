@@ -10,50 +10,37 @@ import Marquee from "react-fast-marquee";
 
 export default function Skills({ content }) {
 
-    console.log("skillList : ", content.skillList);
 
-
-    const uniqueTags = Array.from(new Set(content.skillList.flatMap(skill => skill.tags)));
-    const [selectedOption, setSelectedOption] = useState(uniqueTags[0]);
+    const uniqueTags = Array.from(new Set(content.tags));
+    const [selectedOption, setSelectedOption] = useState('All');
     const [skillList, setSkillList] = useState([]);
 
     useEffect(() => {
-        console.log("skillList : ", skillList.length);
         setSkillList(content.skillList);
     }, []);
 
-    // const testimonials = [
-    //     {
-    //         quote:
-    //             "<h1>It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair</h1>",
-    //         name: "Charles Dickens",
-    //         title: "A Tale of Two Cities",
-    //         image: "/images/cypress.png"
-    //     },
-    //     {
-    //         quote:
-    //             "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    //         name: "William Shakespeare",
-    //         title: "Hamlet",
-    //         image: "/images/cypress.png"
-    //     },
-    //     {
-    //         quote: "All that we see or seem is but a dream within a dream.",
-    //         name: "Edgar Allan Poe",
-    //         title: "A Dream Within a Dream",
-    //         image: "/images/cypress.png"
-    //     },
-    // ];
+    useEffect(() => {
+        if (selectedOption === 'All') {
+            setSkillList(content.skillList);
+        } else {
+            const filteredSkills = content.skillList.filter(skill => skill.tags.includes(selectedOption));
+            setSkillList(filteredSkills);
+        }
+    }, [selectedOption]);
 
-    const tiles = [
-        { text: 'Tile 1', image: '/path/to/image1.jpg' },
-        { text: 'Tile 2', image: '/path/to/image2.jpg' },
-        { text: 'Tile 3', image: '/path/to/image3.jpg' },
-        // Add more tiles as needed
-    ];
 
-    // const tileSet = [...tiles, ...tiles];
+    useEffect(() => {
+        const selectedElement = document.querySelector(`#radio-label-${selectedOption}`);
+        if (selectedElement) {
+            const rect = selectedElement.getBoundingClientRect();
+            const parent = document.querySelector('#skill-radio');
+            const parentRect = parent.getBoundingClientRect();
 
+            setPosition({ x: rect.left - parentRect.left - 8, y: rect.top - parentRect.top - 6 });
+        }
+    }, [selectedOption]);
+
+    const [position, setPosition] = useState({ x: 0, y: 0 });
 
     return (
         <div className='relative text-center'>
@@ -61,20 +48,36 @@ export default function Skills({ content }) {
                 {content.title}
             </div>
             <div className="flex flex-col items-center justify-center">
-                <div className="relative flex items-center justify-center shadow-md rounded-full p-1 border-2">
+                <div id="skill-radio" className="relative flex flex-wrap max-w-screen items-center justify-center shadow-md rounded-full p-1 border-2 overflow-x-auto">
 
-                    {/* Background Animation */}
                     <div
-                        className="absolute top-1 left-1 h-10 w-32 bg-blue-500 rounded-full transition-all duration-500"
+                        className="absolute top-1 left-1 h-10 w-32 bg-homebg rounded-full transition-all duration-500"
                         style={{
-                            transform: `translateX(${uniqueTags.indexOf(selectedOption) * 100
-                                }%)`,
+                            transform: `translate(${position.x}px, ${position.y}px)`,
                         }}
                     ></div>
 
-                    {/* Radio Options */}
-                    {uniqueTags.map((tag, index) => (
-                        <div key={tag} className="relative flex-1 w-32 text-center">
+                    <div key='All' className="relative w-32 text-center h-[40px]">
+                        <input
+                            id={`radio-All`}
+                            type="radio"
+                            name="options"
+                            value={'All'}
+                            checked={selectedOption === 'All'}
+                            onChange={() => setSelectedOption('All')}
+                            className="hidden"
+                        />
+                        <label
+                            id={`radio-label-All`}
+                            htmlFor={`radio-All`}
+                            className={`cursor-pointer block py-2 transition duration-500 ${selectedOption === 'All' ? "text-black font-bold" : "text-gray-500"}`}
+                        >
+                            All
+                        </label>
+                    </div>
+
+                    {uniqueTags.map((tag) => (
+                        <div key={tag} className="relative w-32 text-center h-[40px]">
                             <input
                                 id={`radio-${tag}`}
                                 type="radio"
@@ -85,15 +88,15 @@ export default function Skills({ content }) {
                                 className="hidden"
                             />
                             <label
+                                id={`radio-label-${tag}`}
                                 htmlFor={`radio-${tag}`}
-                                className={`cursor-pointer block py-2 transition duration-500 ${selectedOption === tag ? "text-white font-bold" : "text-gray-500"
+                                className={`cursor-pointer block py-2 transition duration-500 ${selectedOption === tag ? "text-black font-bold" : "text-gray-500"
                                     }`}
                             >
                                 {tag}
                             </label>
                         </div>
                     ))}
-
 
                 </div>
             </div>
@@ -102,7 +105,7 @@ export default function Skills({ content }) {
             {
                 (skillList.length > 0) &&
                 <div className="w-full">
-                    <Marquee autoFill={true}>
+                    <Marquee autoFill={true} speed={content.speed}>
                         <div className="flex justify-between w-full">
                             {skillList.map((skill, index) => (
                                 <div key={index} className="flex flex-col items-center mx-20">
@@ -119,11 +122,7 @@ export default function Skills({ content }) {
                         </div>
                     </Marquee>
                 </div>
-
-
             }
-
         </div>
-
     );
 }
