@@ -190,16 +190,6 @@ projects:
     - Java
     - Python
   projectList:
-  # - title: "Couples Yelp"
-  #   description: "Web application for couples to find hotels, and plan their activities."
-  #   technologies:
-  #     - React
-  #     - Node.js
-  #     - MongoDB
-  #   imagePath: "/images/OutingPlanner.png"
-  #   links:
-  #     - name: "GitHub"
-  #       url: "https://github.com/SachinVel/couples-yelp"
   - title: "Task Tracker"
     description: "A Kanban board with CRUD features for tasks, customizable columns, drag-and-drop functionality, and user authentication."
     technologies:
@@ -259,8 +249,6 @@ projects:
       - name: "GitHub"
         url: "https://github.com/enpm613/algolab"
 
-  
-    
 contact:
   email: "velsachin@gmail.com"
   github: "https://github.com/SachinVel"

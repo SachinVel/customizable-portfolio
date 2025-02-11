@@ -3,10 +3,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
 
-
-
 export default function Skills({ content }) {
-
 
     const uniqueTags = Array.from(new Set(content.tags));
     const [selectedOption, setSelectedOption] = useState('All');
