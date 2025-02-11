@@ -7,7 +7,7 @@ import { Box } from '@mui/material';
 import Home from './home';
 import Skills from './skills';
 import About from './about';
-import Experience from './experience';
+import Experience from './Experience';
 import Project from './projects';
 import Contact from './contact';
 import Header from './components/header';
