@@ -1,9 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
-import styles from "./skills.module.css";
 import Image from 'next/image';
-import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
-import { motion } from 'framer-motion';
 import Marquee from "react-fast-marquee";
 
 
