@@ -16,6 +16,10 @@ export default function Experience({ content }) {
         visible: { opacity: 1, height: 'auto' }
     };
 
+    useEffect(() => {
+        console.log(content);
+    }, []);
+
     return (
         <div className='relative md:m-8 text-white'>
             <div className="text-center text-3xl text-white font-bold my-[3%]">
@@ -36,7 +40,7 @@ export default function Experience({ content }) {
                                     <div className='flex items-center gap-5 '>
                                         <strong className='hidden md:block'>{experience.startDate} - {experience.endDate}</strong>
                                         <span className="accordion-icon">
-                                            {activeIndex === index ? <FontAwesomeIcon icon={faMinus} className='text-blue-500'/> : <FontAwesomeIcon icon={faPlus} className='text-blue-500'/>}
+                                            {activeIndex === index ? <FontAwesomeIcon icon={faMinus} className='text-blue-500' /> : <FontAwesomeIcon icon={faPlus} className='text-blue-500' />}
                                         </span>
                                     </div>
                                 </div>
