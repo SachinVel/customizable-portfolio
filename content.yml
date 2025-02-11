@@ -1,0 +1,268 @@
+
+name : "Sachin Velmurugan"
+headerIcon : "/images/avatar-portfolio.png" #optional
+home:
+  title: "My Summary"
+  tiles:
+  - tilename: "Experience"
+    icon: "briefcase"
+    text: "3+ years in software development."
+  - tilename: "Education"
+    icon: "book"  
+    text: "M.Eng in Software Engineering @ University of Maryland, College Park.<br><strong>CGPA: </strong> 3.9/4.0"
+  - tilename: "Technologies"
+    icon: "code"
+    text: "React, Node.js, AWS, Java, Python, MongoDB, SQL, Spring Boot"
+  - tilename: "Current Role"
+    icon: "building"
+    text: "Software Engineer, Data focussed @ U.S. Department of Agriculture"
+  - tilename: "Interests"
+    icon: "heart"
+    text: "Full stack, AI applications, anything that involves coding!"
+
+about:
+  title: "About Me"
+  description: "I am a versatile problem solver with experience in web, desktop (Electron.js), and mobile (React Native) applications, as well as LLM integration and machine learning. I am constantly learning and adapting to new technologies. If you have any business ideas or projects, Kindly let me know. I am always open to new opportunities and collaborations." 
+  imagePath: "/images/profile-photo.jpg"
+
+skills:
+  title: "Skills"
+  speed: 100
+  tags:
+  - "Frontend"
+  - "Backend"
+  - "Testing"
+  - "Database"
+  - "Tools"
+  skillList : 
+  - name: JavaScript
+    image: "/images/javascript.png"
+    tags:
+      - Frontend
+  - name: NextJS
+    image: "/images/nextjs.svg"
+    tags:
+      - Frontend
+  - name: React
+    image: "/images/react.png"
+    tags:
+      - Frontend
+  - name: Node.js
+    image: "/images/nodejs.svg"
+    tags:
+      - Backend
+  - name: Java
+    image: "/images/java.svg"
+    tags:
+      - Backend
+  - name: Spring Boot
+    image: "/images/spring-boot.png"
+    tags:
+      - Backend
+  - name: Cypress
+    image: "/images/cypress.png"
+    tags:
+      - Testing
+  - name: Junit
+    image: "/images/junit.png"
+    tags:
+      - Testing
+  - name: MySQL
+    image: "/images/mysql.svg"
+    tags:
+      - Database
+  - name: MongoDB
+    image: "/images/mongodb.svg"
+    tags:
+      - Database
+  - name: AWS
+    image: "/images/aws.png"
+    tags:
+      - Tools
+  - name: Figma
+    image: "/images/figma.webp"
+    tags:
+      - Tools
+  - name: Firebase
+    image: "/images/firebase.png"
+    tags:
+      - Tools
+  - name: Python
+    image: "/images/python.png"
+    tags:
+      - Backend
+
+experience:
+  title : "Experience"
+  experienceList:
+  - position: "Software Engineer"
+    startDate: "Jul 2024"
+    endDate: "Present"
+    company: "U.S. Department of Agriculture"
+    logo: "/images/usda.png"
+    location: "Phoenix, AZ, USA"
+    keywords: 
+      - AWS
+      - React
+      - Node.js
+      - MongoDB
+      - Python
+    description:
+      - Integrated Geoserver with React to showcase a 2GB geographic shape file on React leaflet map, reducing response time from 60 seconds to just 5 seconds.
+      - Led development of a Python package to automate geospatial agricultural data workflows, integrating satellite data from Google Earth Engine and executing parallel simulations across 100,000+ fields, significantly accelerating data processing and analysis.
+      - Architected and managed a robust AWS infrastructure with 3+ EC2 instances and 5+ S3 Buckets for seamless operation of Node.js and React applications.    
+  - position: "Research Assistant"
+    startDate: "May 2023"
+    endDate: "May 2024"
+    company: "University of Maryland, College Park"
+    logo: "/images/umd.png"
+    location: "College Park, MD, USA"
+    keywords: 
+      - AWS
+      - React
+      - Node.js
+      - MongoDB
+      - Python
+    description:
+      - Migrated a 20-page website with complex data visualizations from vanilla javascript to React.js, cutting page load times by 30% and reducing code complexity by 20%.
+      - Engineered the integration of a Google Sheet with a React-based job application form through AWS Lambda, automating the transfer of applicant data to the sheet and securely archiving resumes in an S3 bucket.
+  - position: "M.Eng Software Engineering Student"
+    startDate: "Aug 2022"
+    endDate: "May 2024"
+    company: "University of Maryland, College Park"
+    logo: "/images/umd.png"
+    location: "College Park, MD, USA"
+    keywords: 
+      - AWS
+      - React
+      - Java
+      - Spring Boot
+      - Machine Learning
+    description:
+      - Gained comprehensive knowledge of the software development lifecycle, from requirements gathering to deployment.
+      - Built two full-stack applications using React, Spring Boot, and MySQL, incorporating LLM integration and machine learning.
+      - Learned secure coding practices to protect applications from common vulnerabilities, including the OWASP Top 10.
+      - Acquired hands-on experience with AWS, leveraging various components for different types of applications.
+      - Developed a solid understanding of common machine learning algorithms and their applications.
+  - position: "Software Engineer"
+    startDate: "Jul 2019"
+    endDate: "Jun 2022"
+    company: "Zoho Corporation"
+    logo: "/images/zoho.png"
+    location: "Chennai, Tamil Nadu, India"
+    keywords: 
+      - HTML/CSS
+      - Jquery
+      - Java
+      - MySQL
+      - JS
+    description:
+      - Created a responsive web video editor, using a unique approach, which has been adopted by 10+ internal teams, resulting in a 66.7% adoption rate.
+      - Worked with a team of 4 in an agile model to conceptualize, design, and develop an efficient customer support tool from the ground up, reducing resolution time of 100+ customer tickets by 90%.
+      - Designed 10+ normalized RDBMS tables and crafted 25+ responsive REST APIs, achieving responses within 100 milliseconds under normal conditions.
+      - Developed and implemented more than 50 test cases for our products using Postman, Jasmine, JUnit, and Selenium, increasing deployment speed by 60%, enabling daily updates.
+      - Participated in building an internal testing tool covering API, unit, and functional testing, yielding a 20% reduction in testing time and a 15% boost in development efficiency.
+      - Implemented essential data structures like stacks for undo/redo operations and applied design patterns, such as Chain of Responsibility, to streamline complex tasks.
+  - position: "Data science Intern"
+    startDate: "Dec 2017"
+    endDate: "Jan 2018"
+    company: "National University of Singapore"
+    logo: "/images/nus.png"
+    location: "Singapore"
+    keywords: 
+      - Python
+      - R
+      - Pandas
+      - Numpy
+    description:
+      - Applied machine learning algorithms such as Random Forest, Decision Tree, Neural Network, and Clustering on a real-world credit card default dataset.
+      - Gained hands-on experience in data preprocessing, data cleaning, data visualization, model building, model evaluation, and model deployment.
+   
+
+projects:
+  title: "Projects"
+  keywords: 
+    - React
+    - React native
+    - Node.js
+    - MongoDB
+    - AWS
+    - Java
+    - Python
+  projectList:
+  # - title: "Couples Yelp"
+  #   description: "Web application for couples to find hotels, and plan their activities."
+  #   technologies:
+  #     - React
+  #     - Node.js
+  #     - MongoDB
+  #   imagePath: "/images/OutingPlanner.png"
+  #   links:
+  #     - name: "GitHub"
+  #       url: "https://github.com/SachinVel/couples-yelp"
+  - title: "Task Tracker"
+    description: "A Kanban board with CRUD features for tasks, customizable columns, drag-and-drop functionality, and user authentication."
+    technologies:
+      - React
+      - Node.js
+      - MongoDB
+    imagePath: "/images/task-tracker.png"
+    links:
+      - name: "GitHub"
+        url: "https://github.com/SachinVel/task-tracker-app"
+  - title: "Menu App"
+    description: "Displays a menu with categories and items. It allows users to add items, view item details, and search for items. The data is stored in a Google Sheet."
+    technologies:
+      - React native
+      - Google sheet API
+    imagePath: "/images/menu-app.jpeg"
+    links:
+      - name: "GitHub"
+        url: "https://github.com/SachinVel/recipes-app-react-native"
+  - title: "Check Scanner"
+    description: "Optical Character Recognition (OCR) scanner of Indian CTS-2010 standard bank cheque using EAST text detector and pytesseract with capabilities to detect amount and account number in the cheque."
+    technologies:
+      - Python
+      - Tessaract
+    imagePath: "/images/check-scanner.JPG"
+    links:
+      - name: "GitHub"
+        url: "https://github.com/SachinVel/Check-Scanner"
+  - title: "Credit Card Fraud Detection"
+    description: "Contains various ML algorithms to a actual credit card dataset to predict defaulters."
+    technologies:
+      - Python
+      - Pandas
+      - Scikit
+    imagePath: "/images/credit-card.webp"
+    links:
+      - name: "GitHub"
+        url: "https://github.com/SachinVel/Credit-Card-Fraud-Detection"
+  - title: "Hangman"
+    description: "A normal hangman game with user authentication."
+    technologies:
+      - React
+      - Node.js
+    imagePath: "/images/hangman.png"
+    links:
+      - name: "GitHub"
+        url: "https://github.com/SachinVel/hangman"
+  - title: "Algolab"
+    description: "A platform for students to practice algorithms and data structures with a code editor, compiler, and test cases."
+    technologies:
+      - React
+      - Java
+      - Spring Boot
+      - MongoDB
+    imagePath: "/images/algolab.png"
+    links:
+      - name: "GitHub"
+        url: "https://github.com/enpm613/algolab"
+
+  
+    
+contact:
+  email: "velsachin@gmail.com"
+  github: "https://github.com/SachinVel"
+  linkedin: "https://www.linkedin.com/in/sachin-velmurugan"
+  stackoverflow: "https://stackoverflow.com/users/11956621/sachin"
