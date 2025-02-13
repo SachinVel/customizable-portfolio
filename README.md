@@ -4,7 +4,7 @@ A customizable portfolio template that helps you create your own portfolio withi
 
 This template provides a quick and easy way to set up a personal portfolio website by just editing the `content.yml` file.
 
-For Demo, click [here](https://new-portfolio-75q5kdams-sachin-velmurugans-projects.vercel.app/).
+For Demo, click [here](https://new-portfolio-bice-two.vercel.app/).
 ## Getting Started
 
 ### 1. Setting Up the Server
