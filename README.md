@@ -13,12 +13,12 @@ For Demo, click [here](https://new-portfolio-bice-two.vercel.app/).
 
 2. **Clone the Repository**: Clone the forked repository to your local machine using the following command:
     ```bash
-    git clone https://github.com/your-username/new-portfolio.git
+    git clone https://github.com/your-username/customizable-portfolio.git
     ```
 
 3. **Navigate to the Project Directory**: Change into the project directory:
     ```bash
-    cd new-portfolio
+    cd customizable-portfolio
     ```
 
 4. **Install Dependencies**: Install the necessary dependencies using npm or yarn:
@@ -50,8 +50,9 @@ The `content.yml` file is where you can customize the content of your portfolio.
 1. **Header**: Contains the title and subtitle of your portfolio.
 2. **About**: Information about yourself, such as your bio and profile picture.
 3. **Projects**: A list of your projects, including titles, descriptions, and links.
-4. **Skills**: A list of your skills, which can include both technical and soft skills.
-5. **Contact**: Your contact information, such as email and social media links.
+4. **Experience**: Details about your professional experience, including job titles, companies, durations, and descriptions of your roles and responsibilities.
+5. **Skills**: A list of your skills, which can include both technical and soft skills.
+6. **Contact**: Your contact information, such as email and social media links.
 
 #### Adding FontAwesome Icons
 
