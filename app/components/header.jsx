@@ -85,7 +85,7 @@ function Header({ content }) {
                             />
                         )}
 
-                        <span className={`lg:text-3xl md:text-2xl font-bold ml-2 inline-flex items-center`}>Sachin Velmurugan</span>
+                        <span className={`lg:text-3xl md:text-2xl font-bold ml-2 inline-flex items-center`}>{content.name}</span>
                     </Stack>
 
                     <ul className="flex items-center text-center gap-4 list-none p-0 m-0">
