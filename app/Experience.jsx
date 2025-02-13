@@ -31,8 +31,8 @@ export default function Experience({ content }) {
                         <AccordionTab key={index}
                             header={
                                 <div className="flex rounded-md justify-between items-center bg-homebg text-black p-2 mb-2 w-full">
-                                    <div className="flex items-center">
-                                        <img src={experience.logo} alt="logo" className="w-10 h-10 mr-4" />
+                                    <div className="flex items-center h-10">
+                                        {experience.logo && <img src={experience.logo} alt="logo" className="w-10 h-10 mr-4" />}
                                         <div>
                                             <strong>{experience.position} @ {experience.company}</strong>
                                         </div>

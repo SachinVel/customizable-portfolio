@@ -29,11 +29,11 @@ skills:
   title: "Skills"
   speed: 100
   tags:
-  - "Frontend"
-  - "Backend"
-  - "Testing"
-  - "Database"
-  - "Tools"
+    - "Frontend"
+    - "Backend"
+    - "Testing"
+    - "Database"
+    - "Tools"
   skillList : 
   - name: JavaScript
     image: "/images/javascript.png"

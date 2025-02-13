@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {  faGithub, faStackOverflow, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-export default function Contact({ content }) {
+export default function Contact({ content, name }) {
 
     const [contact, setContact] = useState(null);
 
@@ -41,7 +41,7 @@ export default function Contact({ content }) {
                             </a>
                         )}
                     </div>
-                    <p className='my-5'>Sachin Velmurugan &copy; 2025</p>
+                    <p className='my-5'>{name} &copy; 2025</p>
                 </div>
             </footer>
         )

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './globals.css';
 
 import { Box } from '@mui/material';
@@ -35,7 +35,7 @@ function HomePage() {
           setError(message);
         }
       } catch (err) {
-        setError(err.message);
+        setError(err.message+". Try undoing the recent changes made to content.yml and refresh.");
       }
     }
     fetchContent();
@@ -93,7 +93,7 @@ function HomePage() {
               </section>
               
               <section id="contact" className='relative'>
-                <Contact content={content.contact} />
+                <Contact content={content.contact} name={content.name}/>
               </section>
             </Box>
           </Box>)
