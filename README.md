@@ -1,8 +1,8 @@
 # Portfolio Template
 
-A customizable portfolio template that helps you create your own portfolio within half an hour.
+A customizable portfolio template that helps you create your own portfolio within minutes.
 
-This template provides a quick and easy way to set up a personal portfolio website.
+This template provides a quick and easy way to set up a personal portfolio website by just editing the `content.yml` file.
 
 For Demo, click [here](https://new-portfolio-bice-two.vercel.app/).
 ## Getting Started
