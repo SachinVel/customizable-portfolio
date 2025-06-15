@@ -8,9 +8,49 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faMoon, faSun, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 gsap.registerPlugin(ScrollTrigger);
+
+import { useTheme } from 'next-themes';
+
+const ThemeToggle = () => {
+    const { theme, setTheme } = useTheme();
+
+    return (
+        <div className="flex items-center space-x-2">
+            <label className="flex items-center cursor-pointer">
+                <input
+                    type="radio"
+                    name="theme"
+                    value="light"
+                    checked={theme === 'light'}
+                    onChange={() => setTheme('light')}
+                    className="hidden"
+                />
+                <FontAwesomeIcon
+                    icon={faSun}
+                    className={`text-xl cursor-pointer ${theme === 'light' ? 'text-yellow-500' : 'text-gray-400'}`}
+                />
+            </label>
+            <label className="flex items-center cursor-pointer">
+                <input
+                    type="radio"
+                    name="theme"
+                    value="dark"
+                    checked={theme === 'dark'}
+                    onChange={() => setTheme('dark')}
+                    className="hidden"
+                />
+                <FontAwesomeIcon
+                    icon={faMoon}
+                    className={`text-xl cursor-pointer ${theme === 'dark' ? 'text-blue-500' : 'text-gray-400'}`}
+                />
+            </label>
+        </div>
+    );
+};
+
 function Header({ content }) {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,6 +127,8 @@ function Header({ content }) {
 
                         <span className={`lg:text-3xl md:text-2xl font-bold ml-2 inline-flex items-center`}>{content.name}</span>
                     </Stack>
+
+                    <ThemeToggle />
 
                     <ul className="flex items-center text-center gap-4 list-none p-0 m-0">
                         <li><Link href="#home" onClick={(e) => handleScroll(e, 'home')} className="text-lg font-medium hover:underline hover:font-bold">Home</Link></li>

@@ -1,13 +1,17 @@
 'use client'
 
 import './globals.css';
-import Header from './components/header';
 import { Box } from '@mui/material';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+
+import { ThemeProvider } from "./components/theme-provider";
+import ParticlesWrapper  from "./components/ParticlesWrapper";
+
 
 import { Quicksand } from 'next/font/google';
+import { useTheme } from 'next-themes';
 
 const quicksand = Quicksand({
   subsets: ['latin'],
@@ -17,6 +21,18 @@ const quicksand = Quicksand({
 
 export default function RootLayout({ children }) {
 
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+  useEffect(()=>{
+    console.log('theme: ',theme);
+  },[theme])
+
+  
+
+  
+
   const particlesInit = useCallback(async engine => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -25,65 +41,22 @@ export default function RootLayout({ children }) {
     await loadFull(engine);
   }, []);
 
+  if (!mounted) return null;
+
   return (
     <html lang="en" className={quicksand.variable}>
       <body>
-        <Box className='home-container'>
-          <Particles
-            className='animation-screen'
-            id="tsparticles"
-            init={particlesInit}
-            options={{
-              fullScreen: { enable: true },
-              background: {
-                color: {
-                  value: "#171E28",
-                },
-              },
-              fpsLimit: 120,
-              particles: {
-                color: {
-                  value: "#ffffff",
-                },
-                links: {
-                  color: "#ffffff",
-                  distance: 200,
-                  enable: false,
-                  opacity: 0.5,
-                  width: 1,
-                },
-                move: {
-                  direction: "bottom",
-                  enable: true,
-                  outModes: {
-                    default: "out",
-                  },
-                  random: false,
-                  speed: 1.5,
-                  straight: true,
-                },
-                number: {
-                  density: {
-                    enable: true,
-                    area: 800,
-                  },
-                  value: 40,
-                },
-                opacity: {
-                  value: 0.5,
-                },
-                shape: {
-                  type: "circle",
-                },
-                size: {
-                  value: { min: 1, max: 3 },
-                },
-              },
-              detectRetina: true,
-            }}
-          />
-        </Box>
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Box className='home-container'>
+            <ParticlesWrapper />
+          </Box>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
